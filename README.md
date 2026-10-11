@@ -2,50 +2,44 @@
 
 ![TabDim: el brillo, pestaña a pestaña](promocional-1400x560.png)
 
-¿Una pestaña te deslumbra y otra está perfecta? Con TabDim, cada una va a su bola.
+Hay webs que, de noche, parecen un foco en la cara. TabDim te deja bajar el brillo de esa pestaña y seguir con el resto como estaban.
 
-Extensión de Google Chrome con Manifest V3 que permite reducir el brillo visual de cada pestaña del **10 % al 100 %**, de forma independiente. Dos pestañas de la misma URL pueden tener ajustes diferentes.
+Cada pestaña tiene su propio ajuste, aunque hayas abierto la misma web dos veces. Mueve el deslizador entre el **10 % y el 100 %** y verás el cambio al momento. Si te pasas, pulsa **Restablecer**.
 
-- Cambios en tiempo real y restablecimiento con un clic.
-- Conserva el brillo al recargar y navegar en la misma pestaña.
-- Icono dinámico con indicador del brillo de la pestaña.
-- Interfaz en español, modo claro/oscuro y botón sol/luna.
-- Popup y ventana independiente vinculada a una pestaña concreta.
-- Sin analítica, anuncios, código remoto ni datos enviados a servidores.
+El ajuste se mantiene al recargar o cambiar de página en esa pestaña. El icono muestra el nivel de brillo, y el botón de sol/luna cambia la apariencia del control.
 
-## Capturas
+**TabDim 1.1.1 está pendiente de aprobación en Chrome Web Store.** Cuando esté disponible, aquí encontrarás el enlace para instalarla. Mientras tanto, este repositorio está abierto para quien quiera echar un vistazo al código.
 
-![Interfaz clara](control-claro.png)
-![Interfaz oscura](control-oscuro.png)
+## Así se ve
 
-## Estado en Chrome Web Store
+![Control en modo claro](control-claro.png)
+![Control en modo oscuro](control-oscuro.png)
 
-**Versión 1.1.1 enviada a Chrome Web Store y pendiente de aprobación por Google**, según confirmación de Vixovi. El enlace de instalación oficial se añadirá cuando esté disponible.
+## Cómo funciona
 
-Este repositorio público permite revisar el código, su funcionamiento, los permisos y la privacidad de TabDim.
+Pulsa el icono de TabDim para ajustar la pestaña que estás viendo. Si tu versión de Chrome lo permite, también puedes abrir el control desde el menú de clic derecho de una pestaña. Esa ventana sigue controlando la misma pestaña aunque cambies a otra. En las versiones sin ese menú, la opción aparece al hacer clic derecho dentro de la página.
 
-## Probar el código localmente
+TabDim coloca una capa negra transparente sobre la página. Puedes seguir haciendo clic, escribiendo y desplazándote; los estilos de la web se quedan como estaban. Las pestañas nuevas empiezan al 100 %.
 
-Para revisar su funcionamiento durante la espera, descarga `TabDim.zip`, extráelo y abre `chrome://extensions`. Activa **Modo de desarrollador**, pulsa **Cargar descomprimida** y elige la carpeta con `manifest.json`. Chrome mínimo: 123. También puedes cargar esta carpeta del repositorio, que contiene el código y los iconos.
+Chrome bloquea las extensiones en algunas páginas, como `chrome://` y la propia tienda. Algunos vídeos en pantalla completa, ventanas Picture-in-Picture y elementos que la web coloca por encima de todo pueden quedar fuera de la capa.
 
-Usa el icono de la extensión para ajustar la pestaña activa. El menú «Ajustar brillo de esta pestaña» aparece en la barra de pestañas cuando Chrome admite el contexto `tab`; en versiones anteriores se ofrece dentro de la página. El control independiente mantiene su objetivo aunque actives otra pestaña.
+## Revisar y probar el código
 
-## Código y documentación
-
-El código de la extensión está disponible en la raíz del repositorio; los iconos están en `icons/`. `TabDim-fuentes.zip` contiene el proyecto completo con pruebas, scripts de empaquetado, documentación y recursos gráficos. No incluye perfiles temporales de navegador.
+Los archivos de la extensión están en la raíz y los iconos en `icons/`. Para probarla, descarga el repositorio o `TabDim.zip`, abre `chrome://extensions`, activa **Modo de desarrollador** y pulsa **Cargar descomprimida**. Elige la carpeta que contiene `manifest.json`. Necesitas Chrome 123 o posterior.
 
 - [Manual y permisos](MANUAL.md)
-- [Resultados y límites de las pruebas](VERIFICACION.md)
-- [Ficha y descripción para la tienda](FICHA.md)
+- [Pruebas realizadas y limitaciones](VERIFICACION.md)
+- [Descripción y permisos de la ficha de la tienda](FICHA.md)
 - [Política de privacidad](PRIVACIDAD.md)
-- `TabDim-WebStore-1.1.1.zip`: copia del paquete 1.1.1 ya enviado por Vixovi, conservada como referencia para revisar esa versión.
 
-## Privacidad y límites
+`TabDim-fuentes.zip` reúne el proyecto, las pruebas y los recursos gráficos. `TabDim-WebStore-1.1.1.zip` es la copia de la versión enviada a Google.
 
-El brillo se guarda por ID en `storage.session` y se borra al reiniciar Chrome, recargar/desactivar la extensión o cerrar la pestaña. La apariencia se conserva en `storage.local`. Los títulos y metadatos de las pestañas se usan localmente para la función; no se guarda historial de navegación ni se transmite información a servidores.
+## Privacidad
 
-Chrome impide la inyección en páginas protegidas como `chrome://` y Chrome Web Store. Vídeos/iframes en pantalla completa, Picture-in-Picture y elementos de la capa superior pueden quedar fuera del oscurecimiento. La extensión añade una capa con `pointer-events: none` al documento principal, sin cambiar los filtros CSS originales.
+Todo funciona en tu navegador. TabDim no envía datos a servidores ni incluye anuncios o analítica. Usa el título de la pestaña para identificarla en el control, pero no guarda tu historial.
 
-Las pruebas automatizadas se ejecutaron en Chromium 148. El menú nativo y el cambio visual de icono en el Chrome instalado no se verificaron automáticamente. Consulta el informe para el alcance completo. El envío a Chrome Web Store está realizado; la aprobación continúa pendiente.
+El brillo se guarda durante la sesión y se borra al cerrar la pestaña, reiniciar Chrome o recargar/desactivar la extensión. La preferencia de modo claro u oscuro sí se conserva.
 
-Desarrollador: **Vixovi** · Soporte: **Vixovi@proton.me**.
+Las pruebas automatizadas se hicieron en Chromium 148. Las comprobaciones que siguen pendientes están detalladas en el [informe de pruebas](VERIFICACION.md).
+
+Hecha por [Vixovi](https://github.com/Vixovi). Para dudas o problemas: [Vixovi@proton.me](mailto:Vixovi@proton.me).

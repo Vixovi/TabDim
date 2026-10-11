@@ -18,21 +18,20 @@ Correo público de soporte: Vixovi@proton.me
 Oscurece cada pestaña de forma independiente con un control de brillo del 10 % al 100 %.
 
 ## Descripción completa
-Controla el brillo visual de cada pestaña con TabDim. Dos pestañas de la misma web pueden tener brillos distintos.
 
-Abre el control desde el icono de la extensión. En las versiones de Chrome compatibles, también puedes hacer clic derecho sobre una pestaña de la barra superior y elegir «Ajustar brillo de esta pestaña». La ventana independiente permanece vinculada a esa pestaña aunque actives otra. En versiones sin ese contexto de menú, la opción está disponible al hacer clic derecho dentro de la página.
+¿Una web te deslumbra y otra está perfecta? Baja el brillo de la primera y deja la segunda como está. Con TabDim, cada pestaña tiene su propio ajuste, incluso si son de la misma web.
 
-• Brillo del 10 % al 100 %, en pasos de 1 %.
-• Cambios en tiempo real y botón Restablecer.
-• Conserva el ajuste al recargar o navegar en la misma pestaña.
-• Controles en español y accesibles con teclado.
-• Apariencia clara u oscura seleccionable y recordada.
-• Icono con indicador de nivel que refleja el brillo de cada pestaña.
-• Sin cuentas, analítica, anuncios ni servicios externos.
+Pulsa el icono de la extensión y mueve el deslizador del 10 % al 100 %. El cambio es inmediato. Si quieres volver al brillo original, pulsa Restablecer.
 
-TabDim superpone una capa negra que deja pasar los clics, sin cambiar los filtros CSS de la web. No cambia el brillo del monitor. Las pestañas nuevas empiezan al 100 %. Los ajustes se borran al reiniciar Chrome o recargar/desactivar la extensión.
+El ajuste se mantiene al recargar y al navegar en esa pestaña. El icono muestra el nivel de brillo y el botón de sol/luna cambia el control entre modo claro y oscuro.
 
-Chrome impide usarla en páginas protegidas como chrome:// y Chrome Web Store. Vídeos o iframes en pantalla completa, Picture-in-Picture y otros elementos de la capa superior pueden quedar fuera del oscurecimiento.
+En las versiones compatibles de Chrome puedes abrir una ventana de control desde el menú de clic derecho de la pestaña. Aunque te vayas a otra, esa ventana sigue ajustando la misma. Si Chrome no admite ese menú, encontrarás la opción al hacer clic derecho dentro de la página.
+
+TabDim añade una capa negra transparente que deja pasar los clics. Puedes seguir usando la web con normalidad. Las pestañas nuevas empiezan al 100 % y los ajustes se borran al reiniciar Chrome o recargar/desactivar la extensión.
+
+Funciona en tu navegador, sin cuentas, anuncios ni analítica. No envía datos a servidores.
+
+Chrome impide su uso en páginas protegidas, como chrome:// y Chrome Web Store. Algunos vídeos o iframes en pantalla completa, ventanas Picture-in-Picture y elementos de la capa superior pueden quedar fuera del oscurecimiento.
 
 ## Propósito único
 Permitir ajustar de forma independiente el brillo visual de cada pestaña del navegador mediante una capa negra local que no intercepta la interacción.
@@ -51,13 +50,9 @@ Acceso a hosts HTTP, HTTPS y file: reaplicar el ajuste al recargar y navegar, in
 ## Datos y código
 Sin código remoto. No se recopilan ni transmiten datos a servidores. El título y la URL que proporciona Chrome se usan localmente para la función; no se guarda un historial ni se leen formularios o contenido de la página. El brillo y el ID de pestaña se guardan temporalmente en session.
 
-Revisar las definiciones exactas del formulario de privacidad del panel antes de marcar sus casillas: no confundir el acceso local a metadatos con recolección o transmisión externa.
-
 ## Instrucciones de revisión
 No se requiere cuenta ni credenciales para usar la extensión. Abrir dos pestañas de una página HTTP/HTTPS, asignar brillos distintos desde el icono y comprobar recarga, navegación y restablecimiento. En Chrome compatible, usar el menú tab en una pestaña inactiva y comprobar que la ventana mantiene ese objetivo. En chrome://version debe aparecer un aviso. Cerrar una pestaña con control abierto debe desactivarlo.
 
 ## Estado de publicación
 
-La versión 1.1.1 ya está enviada a Chrome Web Store y pendiente de aprobación por Google, según confirmación de Vixovi. La política de privacidad y los recursos gráficos ya están disponibles en este repositorio. Esta ficha documenta la descripción y los permisos de la extensión para quien quiera revisarlos.
-
-Las pruebas manuales no verificadas siguen identificadas en VERIFICACION.md. El envío a revisión no equivale a aprobación.
+TabDim 1.1.1 está enviada a Chrome Web Store y pendiente de aprobación. Las pruebas realizadas y las comprobaciones pendientes están en [VERIFICACION.md](VERIFICACION.md).
