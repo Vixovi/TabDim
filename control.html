@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TabDim</title><link rel="stylesheet" href="control.css"></head>
+<body><main>
+  <header class="heading"><h1>TabDim</h1><button id="theme" type="button" class="theme-toggle" aria-label="Activar modo oscuro" title="Activar modo oscuro" aria-pressed="false"><svg id="theme-sun" viewBox="0 0 24 24" aria-hidden="true" hidden><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg><svg id="theme-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14A9 9 0 0 1 10 3.5 9 9 0 1 0 20.5 14Z"/></svg></button></header>
+  <p id="target" title="Pestaña controlada">Buscando pestaña…</p>
+  <fieldset disabled id="controls">
+    <legend>Brillo visual</legend>
+    <div class="reading"><label for="brightness">Brillo</label><output for="brightness" id="percentage">100 %</output></div>
+    <input id="brightness" type="range" min="10" max="100" step="1" value="100">
+    <div class="scale"><span>10 %</span><span>100 %</span></div>
+    <button id="reset" type="button">Restablecer</button>
+  </fieldset>
+  <p id="status" role="status" aria-live="polite"></p>
+</main><script src="control.js" type="module"></script></body></html>
