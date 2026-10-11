@@ -2,13 +2,13 @@
 
 ![TabDim: el brillo, pestaña a pestaña](promocional-1400x560.png)
 
-Hay webs que, de noche, parecen un foco en la cara. TabDim te deja bajar el brillo de esa pestaña y seguir con el resto como estaban.
+Son las dos de la mañana. Abres una web y, por lo visto, has solicitado un interrogatorio.
 
-Cada pestaña tiene su propio ajuste, aunque hayas abierto la misma web dos veces. Mueve el deslizador entre el **10 % y el 100 %** y verás el cambio al momento. Si te pasas, pulsa **Restablecer**.
+TabDim baja el brillo de cada pestaña por separado. Porque que una web haya decidido convertirse en un faro no significa que las demás tengan que pagar las consecuencias.
 
-El ajuste se mantiene al recargar o cambiar de página en esa pestaña. El icono muestra el nivel de brillo, y el botón de sol/luna cambia la apariencia del control.
+Del **10 % al 100 %**, al momento. Dos pestañas de la misma web pueden tener brillos distintos: sí, incluso ellas tienen derecho a discrepar. El ajuste aguanta las recargas y los cambios de página. El icono muestra el nivel de brillo y el control tiene modo oscuro, por aquello de predicar con el ejemplo.
 
-**TabDim 1.1.1 está pendiente de aprobación en Chrome Web Store.** Cuando esté disponible, aquí encontrarás el enlace para instalarla. Mientras tanto, este repositorio está abierto para quien quiera echar un vistazo al código.
+**TabDim 1.1.1 está pendiente de aprobación en Chrome Web Store.** La extensión ya está enviada; ahora le toca a Google. Aquí quedará el enlace cuando esté disponible. Mientras tanto, el código está a la vista para quien prefiera mirar debajo del capó.
 
 ## Así se ve
 
@@ -36,7 +36,7 @@ Los archivos de la extensión están en la raíz y los iconos en `icons/`. Para 
 
 ## Privacidad
 
-Todo funciona en tu navegador. TabDim no envía datos a servidores ni incluye anuncios o analítica. Usa el título de la pestaña para identificarla en el control, pero no guarda tu historial.
+Todo funciona en tu navegador. Sin anuncios, sin analítica y sin enviar datos a servidores. Bajar el brillo no debería requerir una relación comercial con tu historial. TabDim usa el título para identificar la pestaña en el control; no guarda qué páginas visitas.
 
 El brillo se guarda durante la sesión y se borra al cerrar la pestaña, reiniciar Chrome o recargar/desactivar la extensión. La preferencia de modo claro u oscuro sí se conserva.
 

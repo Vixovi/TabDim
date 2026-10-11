@@ -19,19 +19,21 @@ Oscurece cada pestaña de forma independiente con un control de brillo del 10 % 
 
 ## Descripción completa
 
-¿Una web te deslumbra y otra está perfecta? Baja el brillo de la primera y deja la segunda como está. Con TabDim, cada pestaña tiene su propio ajuste, incluso si son de la misma web.
+Son las dos de la mañana. Abres una web y, por lo visto, has solicitado un interrogatorio.
 
-Pulsa el icono de la extensión y mueve el deslizador del 10 % al 100 %. El cambio es inmediato. Si quieres volver al brillo original, pulsa Restablecer.
+TabDim baja el brillo de cada pestaña por separado. Porque que una web haya decidido convertirse en un faro no significa que las demás tengan que pagar las consecuencias.
 
-El ajuste se mantiene al recargar y al navegar en esa pestaña. El icono muestra el nivel de brillo y el botón de sol/luna cambia el control entre modo claro y oscuro.
+Ajusta el brillo del 10 % al 100 %, al momento. Dos pestañas de la misma web pueden tener valores distintos: sí, incluso ellas tienen derecho a discrepar. El ajuste se mantiene al recargar y cambiar de página dentro de esa pestaña.
 
-En las versiones compatibles de Chrome puedes abrir una ventana de control desde el menú de clic derecho de la pestaña. Aunque te vayas a otra, esa ventana sigue ajustando la misma. Si Chrome no admite ese menú, encontrarás la opción al hacer clic derecho dentro de la página.
+El icono muestra el nivel de brillo. El control tiene modo claro y oscuro, por aquello de predicar con el ejemplo.
 
-TabDim añade una capa negra transparente que deja pasar los clics. Puedes seguir usando la web con normalidad. Las pestañas nuevas empiezan al 100 % y los ajustes se borran al reiniciar Chrome o recargar/desactivar la extensión.
+En las versiones compatibles de Chrome, el menú de clic derecho de la pestaña abre una ventana que sigue controlándola aunque te vayas a otra. Si Chrome no admite ese menú, la opción aparece al hacer clic derecho dentro de la página.
 
-Funciona en tu navegador, sin cuentas, anuncios ni analítica. No envía datos a servidores.
+TabDim coloca una capa negra transparente sobre la web. Los clics, la escritura y el scroll siguen funcionando; los estilos originales se quedan como estaban. Las pestañas nuevas empiezan al 100 % y los ajustes se borran al reiniciar Chrome o recargar/desactivar la extensión.
 
-Chrome impide su uso en páginas protegidas, como chrome:// y Chrome Web Store. Algunos vídeos o iframes en pantalla completa, ventanas Picture-in-Picture y elementos de la capa superior pueden quedar fuera del oscurecimiento.
+Sin cuentas, anuncios ni analítica. Todo funciona en tu navegador y no se envían datos a servidores. Bajar el brillo no debería requerir una relación comercial con tu historial.
+
+Chrome bloquea su uso en páginas protegidas, como chrome:// y la propia tienda. Algunos vídeos o iframes en pantalla completa, ventanas Picture-in-Picture y elementos de la capa superior pueden quedar fuera del oscurecimiento.
 
 ## Propósito único
 Permitir ajustar de forma independiente el brillo visual de cada pestaña del navegador mediante una capa negra local que no intercepta la interacción.
