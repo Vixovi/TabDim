@@ -27,16 +27,20 @@ Ajusta el brillo del 10 % al 100 %, al momento. Dos pestañas de la misma web pu
 
 El icono muestra el nivel de brillo. El control tiene modo claro y oscuro, por aquello de predicar con el ejemplo.
 
-En las versiones compatibles de Chrome, el menú de clic derecho de la pestaña abre una ventana que sigue controlándola aunque te vayas a otra. Si Chrome no admite ese menú, la opción aparece al hacer clic derecho dentro de la página.
+Puedes abrir el control desde el icono de TabDim. Chrome también puede permitir abrir una ventana de control desde el menú de clic derecho de la pestaña, en la barra superior. Si la abres para YouTube y luego te vas a otra pestaña, esa ventana seguirá ajustando YouTube.
 
-TabDim coloca una capa negra transparente sobre la web. Los clics, la escritura y el scroll siguen funcionando; los estilos originales se quedan como estaban. Las pestañas nuevas empiezan al 100 % y los ajustes se borran al reiniciar Chrome o recargar/desactivar la extensión.
+Si Chrome no permite añadir la opción al menú de la barra, TabDim intenta añadirla al menú de clic derecho dentro de la página.
+
+TabDim oscurece la web con una capa negra que deja pasar los clics. Puedes seguir escribiendo y desplazándote; los estilos originales no cambian. Las pestañas nuevas empiezan al 100 %.
+
+El brillo se conserva mientras la pestaña siga abierta. Se borra al cerrarla, reiniciar Chrome, desactivar TabDim o recargar la extensión desde sus detalles. Recargar la página no borra el ajuste.
 
 Sin cuentas, anuncios ni analítica. Todo funciona en tu navegador y no se envían datos a servidores. Bajar el brillo no debería requerir una relación comercial con tu historial.
 
-Chrome bloquea su uso en páginas protegidas, como chrome:// y la propia tienda. Algunos vídeos o iframes en pantalla completa, ventanas Picture-in-Picture y elementos de la capa superior pueden quedar fuera del oscurecimiento.
+Chrome bloquea su uso en páginas protegidas, como chrome:// y la propia tienda. Algunos vídeos o iframes en pantalla completa, vídeos en una ventana flotante (Picture-in-Picture) y elementos como diálogos pueden quedar por encima de la capa y conservar su brillo.
 
 ## Propósito único
-Permitir ajustar de forma independiente el brillo visual de cada pestaña del navegador mediante una capa negra local que no intercepta la interacción.
+Ajustar el brillo visual de cada pestaña por separado, sin impedir los clics ni la escritura en la página.
 
 ## Justificación de permisos
 storage: guardar temporalmente el brillo por ID de pestaña en storage.session, sincronizar los controles abiertos y conservar la preferencia claro/oscuro en storage.local. No se transmite ni sincroniza con servidores.
@@ -45,7 +49,7 @@ contextMenus: abrir el control de la pestaña seleccionada desde su menú nativo
 
 tabs: obtener el título mostrado al usuario y la pestaña activa, y detectar el cierre y navegación de la pestaña objetivo. No se guarda historial de navegación.
 
-scripting: aplicar la capa a documentos ya abiertos y recuperar la aplicación cuando el script del documento no está disponible.
+scripting: añadir la capa a páginas que ya estaban abiertas al instalar TabDim y volver a insertarla si la página deja de responder a la extensión.
 
 Acceso a hosts HTTP, HTTPS y file: reaplicar el ajuste al recargar y navegar, incluso a otro dominio dentro de la misma pestaña. La autorización temporal activeTab no cubre esta función. El acceso a archivos requiere que el usuario lo habilite en Chrome.
 
