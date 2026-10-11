@@ -1,4 +1,4 @@
-# TabDim — borrador para Chrome Web Store
+# TabDim — ficha de Chrome Web Store
 
 ## Nombre
 TabDim
@@ -56,7 +56,8 @@ Revisar las definiciones exactas del formulario de privacidad del panel antes de
 ## Instrucciones de revisión
 No se requiere cuenta ni credenciales para usar la extensión. Abrir dos pestañas de una página HTTP/HTTPS, asignar brillos distintos desde el icono y comprobar recarga, navegación y restablecimiento. En Chrome compatible, usar el menú tab en una pestaña inactiva y comprobar que la ventana mantiene ese objetivo. En chrome://version debe aparecer un aviso. Cerrar una pestaña con control abierto debe desactivarlo.
 
-## Pendiente antes de enviar
-Cuenta de desarrollador registrada según confirmación del propietario. Identidad y correo público confirmados: Vixovi, Vixovi@proton.me.
+## Estado de publicación
 
-Pendientes: URL pública de política de privacidad; imagen promocional 440 × 280; al menos una captura real 1280 × 800 o 640 × 400. Confirmar las pruebas manuales pendientes de VERIFICACION.md. La aprobación depende de Google.
+La versión 1.1.1 ya está enviada a Chrome Web Store y pendiente de aprobación por Google, según confirmación de Vixovi. La política de privacidad y los recursos gráficos ya están disponibles en este repositorio. Esta ficha documenta la descripción y los permisos de la extensión para quien quiera revisarlos.
+
+Las pruebas manuales no verificadas siguen identificadas en VERIFICACION.md. El envío a revisión no equivale a aprobación.
